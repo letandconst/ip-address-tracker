@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link ref="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  
+  
+
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+
+  
+</head>
+<body>
+<div class="container-fluid">
+<div class="content-wrapper">
+ <h1>IP Address Tracker</h1>
+
+ 
+ <form class="form-elements">
+  <input type="text" id="handleInput" placeholder="Search for any IP address or domain"> 
+  <button id="handleSubmit" class="btn btn-dark">
+    <img src="images/icon-arrow.svg" width="12px" height="12px" alt="" srcset="">
+  </button>
+ </form>
+
+
+  <div class="results-container">
+    <div class="result-label">
+        <div class="text-light">IP Address</div>
+        <span id="ipAddressData" class="results">192.168.1.1</span>
+    </div>
+    <div class="result-label">
+      <div class="text-light">Location</div>
+      <span id="locationData" class="results">Philippines</span>
+    </div>
+    <div class="result-label">
+      <div class="text-light">Timezone</div>
+      <span id="timeZoneData" class="results">GMT +8</span>
+    </div>
+    <div class="result-label">
+      <div class="text-light">ISP</div>
+      <span id="serviceProviderData" class="results">GLOBE</span>
+    </div>
+   
+      
+  </div>
+</div>
+
+</div>
+<div id="display-map" class="map-container"></div>
+
+
+ 
+
+  
+
+
+  
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+<script src="js/index.js"></script>
+</body>
+</html>
